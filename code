@@ -1,0 +1,17 @@
+# guessing the word game 
+word = "tree"
+guess_count = 0 #initializing the variable
+guess_limit = 3 #limit for the no. of chances
+while guess_count < guess_limit:
+    guess=input('guess the word: ')
+    guess_count += 1
+    if guess == word:
+        print("you guessed it right ....well done")
+        break #to terminate the loop
+    else:
+        print('wrong guess')
+        hint = input('want a hint?: ')
+        if hint=='yes':
+            print("it turns CO2 into O2")
+else:
+    print('oops..!! better luck next time')
